@@ -8,9 +8,10 @@
 # Hi, I'm Shaurya 👋
 
 I build complete, production-minded systems — and I like working across the whole
-stack: a low-latency backend in Go, a real-time full-stack product, an end-to-end
-ML service, and a data investigation that lands a concrete finding. Each project
-below is finished, documented, and reproducible from a single command.
+stack: a low-latency backend in Go, a real-time full-stack product, two end-to-end
+ML services (credit risk and semiconductor yield), and a data investigation that
+lands a concrete finding. Each project below is finished, documented, and
+reproducible from a single command.
 
 ---
 
@@ -38,6 +39,14 @@ Honest handling of class imbalance, cost-based thresholding, calibration over ra
 
 ---
 
+### 🔬 [wafer-yield-predictor](https://github.com/shaurya703/wafer-yield-predictor) · *Machine learning · Python*
+Predicting pass/fail wafer yield from semiconductor fab sensor data (UCI SECOM).
+> **Catches 86% of defective wafers (recall on a 6.6%-rare FAIL class) at ROC-AUC 0.76**, with SHAP naming the sensors behind each yield excursion — built around severe class imbalance and explainability, framed in fab/process terms.
+
+Leakage-safe sklearn pipeline, in-fold imbalance comparison (class weights vs SMOTE vs undersampling), cost-aware thresholding, FastAPI + Streamlit, Docker.
+
+---
+
 ### 📉 [hidden-mutual-fund-fees](https://github.com/shaurya703/hidden-mutual-fund-fees) · *Data analysis · Python*
 Measuring what India's "Regular" mutual-fund plans quietly cost investors.
 > **Across 1,084 matched funds, Direct beat Regular in 99% of cases — costing a typical equity SIP ~₹27 lakh over 20 years (18% of the corpus).** Paired Wilcoxon *p* ≈ 10⁻¹⁷⁶.
@@ -46,6 +55,6 @@ A clean, assumption-free measurement from official data — same portfolio, two 
 
 ---
 
-**Stack:** Go · TypeScript/React/Node · Python (scikit-learn, XGBoost, SHAP, FastAPI) · PostgreSQL · Redis · Docker
+**Stack:** Go · TypeScript/React/Node · Python (scikit-learn, XGBoost, imbalanced-learn, SHAP, FastAPI, Streamlit) · PostgreSQL · Redis · Docker
 
 📫 kesar.rahulk@gmail.com
