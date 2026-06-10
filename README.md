@@ -57,4 +57,4 @@ A clean, assumption-free measurement from official data — same portfolio, two 
 
 **Stack:** Go · TypeScript/React/Node · Python (scikit-learn, XGBoost, imbalanced-learn, SHAP, FastAPI, Streamlit) · PostgreSQL · Redis · Docker
 
-📫 kesar.rahulk@gmail.com
+📫 kesar.shaurya@gmail.com
