@@ -8,10 +8,10 @@
 # Hi, I'm Shaurya 👋
 
 I build complete, production-minded systems — and I like working across the whole
-stack: a low-latency backend in Go, a real-time full-stack product, two end-to-end
-ML services (credit risk and semiconductor yield), and a data investigation that
-lands a concrete finding. Each project below is finished, documented, and
-reproducible from a single command.
+stack: a low-latency backend in Go, a real-time full-stack product, a civic-tech
+eligibility engine, two end-to-end ML services (credit risk and semiconductor
+yield), and a data investigation that lands a concrete finding. Each project below
+is finished, documented, and reproducible from a single command.
 
 ---
 
@@ -28,6 +28,14 @@ A real-time Kanban tool (Trello/Linear-style) with live multi-client sync.
 > **JWT refresh-rotation with reuse detection, optimistic drag-and-drop with rollback, typed end-to-end contracts — `docker compose up` and you're running.**
 
 Socket.IO rooms, role-based sharing (owner/editor/viewer), activity log, React + Node.
+
+---
+
+### 🏛️ [schemefinder](https://github.com/shaurya703/schemefinder) · *Civic tech · Python + TypeScript*
+Helps Indian citizens discover government schemes they qualify for — answer ~10 questions, see ranked matches and exactly why.
+> **A three-state rules engine (eligible / possibly / not — it never overclaims) over a hand-curated dataset of 48 central + Karnataka schemes, every entry fact-checked against official sources.**
+
+Structured YAML eligibility rules with a schema validator, per-criterion why-traces, FastAPI + Postgres, React questionnaire, no login and nothing stored.
 
 ---
 
